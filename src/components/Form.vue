@@ -1,7 +1,6 @@
 <template>
-  <main>
+  <div>
     <h1>Find Location</h1>
-    <!-- <div> -->
     <form @submit.prevent="submitForm">
       <label for="">Name</label>
       <input type="text" placeholder="Enter name of location" v-model="name" />
@@ -26,9 +25,7 @@
       />
       <button :disabled="isDisabled" type="submit">Submit</button>
     </form>
-
-    <!-- </div> -->
-  </main>
+  </div>
 </template>
 
 <script>
@@ -114,7 +111,7 @@ textarea {
   height: 2.5rem;
   font-size: 1.25rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border: 2px solid grey;
+  border: 3px solid rgb(200, 198, 198);
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -122,10 +119,23 @@ textarea {
   height: 5rem;
 }
 button {
-  /* width: 25%; */
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   font-size: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
+  transition-duration: 0.4s;
+
+  border: 3px solid #6fb378;
+  background-color: #a7fbb2;
+  color: #1b5423;
+}
+button:hover {
+  cursor: pointer;
+  background: white;
+}
+button:disabled {
+  background: rgb(198, 196, 196);
+  border: 0;
+  color: rgb(53, 52, 52);
 }
 </style>

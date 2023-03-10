@@ -1,3 +1,15 @@
+<template>
+  <main>
+    <Form @formSubmitted="onFormSubmitted" />
+    <Map
+      :lat="state.lat"
+      :lng="state.lng"
+      :description="state.description"
+      :name="state.name"
+    />
+  </main>
+</template>
+
 <script>
 import { reactive } from "vue";
 import Form from "./components/Form.vue";
@@ -29,22 +41,8 @@ export default {
 };
 </script>
 
-<template>
-  <main>
-    <div>
-      <Form @formSubmitted="onFormSubmitted" />
-      <Map
-        :lat="state.lat"
-        :lng="state.lng"
-        :description="state.description"
-        :name="state.name"
-      />
-    </div>
-  </main>
-</template>
-
 <style scoped>
-div {
+main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
