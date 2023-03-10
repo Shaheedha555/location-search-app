@@ -37,7 +37,6 @@ export default {
     const description = ref("");
     const lat = ref(0);
     const lng = ref(0);
-    console.log(name.value.trim(), " name trim");
 
     function submitForm() {
       // console.log("submitted", { lat, lng });
