@@ -3,7 +3,7 @@
   <!-- <div class="div" >{{ description }}</div> -->
   <GoogleMap
     api-key="AIzaSyC9ABf9jMy2vBDTUjadPB-ukqv2qf8AyJo"
-    style="width: 100%; height: 500px"
+    style="width: 100%; height: 600px"
     :center="{ lat: lat, lng: lng }"
     :zoom="3"
   >
