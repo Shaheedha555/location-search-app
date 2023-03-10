@@ -6,4 +6,7 @@ An app to search a location my providing location name, description, latitude an
 
 ## View:
 
-<img width="800" alt="Screenshot 2023-03-10 101041 n" src="https://user-images.githubusercontent.com/66831984/224230104-73e07728-eff0-410b-937a-359a0a553d66.png">
+
+
+https://user-images.githubusercontent.com/66831984/224294874-2205f267-8b4d-4e9b-91f7-95c6490ffd17.mp4
+
